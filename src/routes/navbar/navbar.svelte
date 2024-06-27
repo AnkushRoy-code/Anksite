@@ -1,14 +1,14 @@
 <script>
-	import Profile from './Profile/Profile.svelte';
+	import Sidebar from './Sidebar/Sidebar.svelte';
 </script>
+
+<Sidebar />
 
 <div class="navbar">
 	<h3 class="name">
 		Ank<span class="highlight">site</span>
 	</h3>
-	<div class="right-section">
-		<Profile />
-	</div>
+	<div class="right-section"></div>
 </div>
 
 <style>
