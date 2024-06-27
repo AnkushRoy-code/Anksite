@@ -9,16 +9,20 @@
 
 	function toggleMenu() {
 		open = !open;
+		const radius = Math.ceil(window.innerHeight * 1.1);
 		if (!open) {
-			gsap.to(sidebar, {
-				clipPath: 'circle(1200px at 50px 50px)',
-				duration: 0.8,
-				ease: 'power4.out'
-			});
+			gsap
+				.to(sidebar, {
+					clipPath: `circle(${radius}px at 50px 50px)`,
+					duration: 0.5,
+					ease: 'power4.out'
+				
+				
+				});
 		} else {
 			gsap.to(sidebar, {
 				clipPath: 'circle(25px at 2.5em 2.5em)',
-				duration: 0.8,
+				duration: 0.5,
 				ease: 'power4.in'
 			});
 		}
@@ -27,6 +31,7 @@
 	onMount(() => {
 		gsap.set(sidebar, { clipPath: 'circle(25px at  2.5em  2.5em)' });
 	});
+
 </script>
 
 <div class="sidebar-wrapper">

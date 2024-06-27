@@ -1,26 +1,13 @@
 <script>
-	import { onMount } from 'svelte';
-	import gsap from 'gsap';
-
-	const items = ['Something 1', 'Something 2', 'Something 3', 'Something 4', 'Something 5'];
-
-	let links;
-
-	onMount(() => {
-		gsap.from(links.children, {
-			y: 50,
-			opacity: 0,
-			stagger: 0.1,
-			duration: 0.5,
-			ease: 'power2.out'
-		});
-	});
+	export let links;
 </script>
 
 <div class="links" bind:this={links}>
-	{#each items as item}
-		<a href="#{item}" class="link">{item}</a>
-	{/each}
+	<a href="/" class="link">About</a>
+	<a href="/" class="link">About</a>
+	<a href="/" class="link">About</a>
+	<a href="/" class="link">About</a>
+	<a href="/" class="link">About</a>
 </div>
 
 <style>
@@ -32,11 +19,11 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		gap: 20px;
+		gap: 40px;
 	}
 	.link {
 		font-size: 25px;
-		color: #c2410c;
+		color: #0b0029;
 		transition: transform 0.2s;
 	}
 	.link:hover {
