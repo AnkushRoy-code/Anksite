@@ -13,7 +13,7 @@
 		const middlePath = document.getElementById('middlePath');
 		const bottomPath = document.getElementById('bottomPath');
 
-		if (!open) {
+		if (open) {
 			gsap.to(topPath, { y: 0, rotation: 45, duration: 0.3, ease: 'power2.out' });
 			gsap.to(middlePath, { opacity: 0, duration: 0.1 });
 			gsap.to(bottomPath, { y: 0, rotation: -45, duration: 0.3, ease: 'power2.out' });
@@ -30,21 +30,21 @@
 		<path
 			id="topPath"
 			stroke-width="3"
-			stroke="#086659"
+			stroke="#11111b"
 			stroke-linecap="round"
 			d="M 2 2.5 L 20 2.5"
 		/>
 		<path
 			id="middlePath"
 			stroke-width="3"
-			stroke="#086659"
+			stroke="#11111b"
 			stroke-linecap="round"
 			d="M 2 9.423 L 20 9.423"
 		/>
 		<path
 			id="bottomPath"
 			stroke-width="3"
-			stroke="#086659"
+			stroke="#11111b"
 			stroke-linecap="round"
 			d="M 2 16.346 L 20 16.346"
 		/>
@@ -58,8 +58,8 @@
 		width: 50px;
 		height: 50px;
 		border-radius: 50%;
-		top: 19px;
-		left: 12px;
+		top: 18px;
+		left: 9px;
 		padding-left: 15px;
 		border: none;
 		cursor: pointer;

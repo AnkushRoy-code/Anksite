@@ -10,15 +10,12 @@
 	function toggleMenu() {
 		open = !open;
 		const radius = Math.ceil(window.innerHeight * 1.1);
-		if (!open) {
-			gsap
-				.to(sidebar, {
-					clipPath: `circle(${radius}px at 50px 50px)`,
-					duration: 0.5,
-					ease: 'power4.out'
-				
-				
-				});
+		if (open) {
+			gsap.to(sidebar, {
+				clipPath: `circle(${radius}px at 50px 50px)`,
+				duration: 0.5,
+				ease: 'power4.out'
+			});
 		} else {
 			gsap.to(sidebar, {
 				clipPath: 'circle(25px at 2.5em 2.5em)',
@@ -26,12 +23,18 @@
 				ease: 'power4.in'
 			});
 		}
+		console.log(open);
+	}
+
+	function handleClickOutside(event) {
+		if (!sidebar.contains(event.target)) {
+			toggleMenu();
+		}
 	}
 
 	onMount(() => {
 		gsap.set(sidebar, { clipPath: 'circle(25px at  2.5em  2.5em)' });
 	});
-
 </script>
 
 <div class="sidebar-wrapper">
@@ -55,6 +58,6 @@
 		left: 0;
 		bottom: 0;
 		width: 400px;
-		background: #1d97f5;
+		background: #74c7ec;
 	}
 </style>

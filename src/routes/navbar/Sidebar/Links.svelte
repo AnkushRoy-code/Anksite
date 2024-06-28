@@ -3,11 +3,13 @@
 </script>
 
 <div class="links" bind:this={links}>
-	<a href="/" class="link">About</a>
-	<a href="/" class="link">About</a>
-	<a href="/" class="link">About</a>
-	<a href="/" class="link">About</a>
-	<a href="/" class="link">About</a>
+	<a href="/" class="link">Home</a>
+	<a href="/aboutme" class="link">About Me</a>
+	<a href="/projects" class="link">Projects</a>
+	<a href="/skills" class="link">Skills</a>
+	<a href="/contact" class="link">Contact</a>
+	<a href="/achivements" class="link">Achivements</a>
+	<a href="/hobbies" class="link">Hobbies And Interests</a>
 </div>
 
 <style>
@@ -19,7 +21,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		gap: 40px;
+		gap: 5%;
 	}
 	.link {
 		font-size: 25px;

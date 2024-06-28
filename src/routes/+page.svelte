@@ -21,7 +21,7 @@
 			rgba(9, 9, 121, 1) 35%,
 			rgba(0, 212, 255, 1) 100%
 		);
-		height: 200vh;
+		height: 400vh;
 		width: 100vw;
 	}
 
