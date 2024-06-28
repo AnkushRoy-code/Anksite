@@ -69,7 +69,7 @@
 	}
 	.footer-col h4 {
 		font-size: 18px;
-		color: #ffffff;
+		color: #cdd6f4;
 		text-transform: capitalize;
 		margin-bottom: 35px;
 		font-weight: 500;
@@ -80,7 +80,7 @@
 		position: absolute;
 		left: 0;
 		bottom: -10px;
-		background-color: #e91e63;
+		background-color: #89dceb;
 		height: 2px;
 		box-sizing: border-box;
 		width: 50px;
@@ -94,7 +94,7 @@
 		color: #ffffff;
 		text-decoration: none;
 		font-weight: 300;
-		color: #bbbbbb;
+		color: #a6adc8;
 		display: block;
 		transition: all 0.3s ease;
 	}
@@ -111,12 +111,12 @@
 		text-align: center;
 		line-height: 40px;
 		border-radius: 50%;
-		color: #ffffff;
+		color: #bac2de;
 		transition: all 0.5s ease;
 	}
 	.footer-col .social-links a:hover {
 		color: #24262b;
-		background-color: #ffffff;
+		background-color: #bac2de;
 	}
 
 	/*responsive*/

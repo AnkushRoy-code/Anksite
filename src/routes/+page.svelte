@@ -1,25 +1,25 @@
 <main>
 	<div class="content">
 		<div class="list">
-			<div class="item"><img src="https://picsum.photos/200/300?random=1" alt="image" /></div>
-			<div class="item"><img src="https://picsum.photos/200/300?random=2" alt="image" /></div>
-			<div class="item"><img src="https://picsum.photos/200/300?random=3" alt="image" /></div>
-			<div class="item"><img src="https://picsum.photos/200/300?random=4" alt="image" /></div>
-			<div class="item"><img src="https://picsum.photos/200/300?random=5" alt="image" /></div>
-			<div class="item"><img src="https://picsum.photos/200/300?random=6" alt="image" /></div>
-			<div class="item"><img src="https://picsum.photos/200/300?random=7" alt="image" /></div>
+			<div class="item"><img src="https://picsum.photos/200/300?random=1" alt="random" /></div>
+			<div class="item"><img src="https://picsum.photos/200/300?random=2" alt="random" /></div>
+			<div class="item"><img src="https://picsum.photos/200/300?random=3" alt="random" /></div>
+			<div class="item"><img src="https://picsum.photos/200/300?random=4" alt="random" /></div>
+			<div class="item"><img src="https://picsum.photos/200/300?random=5" alt="random" /></div>
+			<div class="item"><img src="https://picsum.photos/200/300?random=6" alt="random" /></div>
+			<div class="item"><img src="https://picsum.photos/200/300?random=7" alt="random" /></div>
 		</div>
 	</div>
 </main>
 
 <style>
 	main {
-		background: rgb(2, 2, 82);
+		background: rgb(78, 82, 171);
 		background: linear-gradient(
-			139deg,
-			rgba(2, 2, 82, 1) 0%,
-			rgba(9, 9, 121, 1) 35%,
-			rgba(0, 212, 255, 1) 100%
+			180deg,
+			rgba(78, 82, 171, 1) 0%,
+			rgba(116, 199, 236, 1) 50%,
+			rgba(148, 226, 213, 1) 100%
 		);
 		height: 400vh;
 		width: 100vw;

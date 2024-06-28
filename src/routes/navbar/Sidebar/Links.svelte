@@ -25,7 +25,7 @@
 	}
 	.link {
 		font-size: 25px;
-		color: #0b0029;
+		color: #11111b;
 		transition: transform 0.2s;
 	}
 	.link:hover {
