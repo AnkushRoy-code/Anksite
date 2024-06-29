@@ -5,40 +5,35 @@
 	<div class="container">
 		<div class="row">
 			<div class="footer-col">
-				<h4>company</h4>
+				<h4>myself</h4>
 				<ul>
-					<li><a href="#">about us</a></li>
-					<li><a href="#">our services</a></li>
-					<li><a href="#">privacy policy</a></li>
-					<li><a href="#">affiliate program</a></li>
+					<li><a href="#">about me</a></li>
+					<li><a href="#">my projects</a></li>
+					<li><a href="#">my dev workflow</a></li>
 				</ul>
 			</div>
 			<div class="footer-col">
-				<h4>get help</h4>
+				<h4>projects</h4>
 				<ul>
-					<li><a href="#">FAQ</a></li>
-					<li><a href="#">shipping</a></li>
-					<li><a href="#">returns</a></li>
-					<li><a href="#">order status</a></li>
-					<li><a href="#">payment options</a></li>
+					<li><a href="#">game of life</a></li>
+					<li><a href="#">ecosight</a></li>
+					<li><a href="#">particle life</a></li>
+					<li><a href="#">streamer hub</a></li>
 				</ul>
 			</div>
 			<div class="footer-col">
-				<h4>online shop</h4>
+				<h4>contact me</h4>
 				<ul>
-					<li><a href="#">watch</a></li>
-					<li><a href="#">bag</a></li>
-					<li><a href="#">shoes</a></li>
-					<li><a href="#">dress</a></li>
+					<li><a href="#">email</a></li>
+					<li><a href="#">telegram</a></li>
+					<li><a href="#">discord</a></li>
 				</ul>
 			</div>
 			<div class="footer-col">
-				<h4>follow us</h4>
+				<h4>follow me</h4>
 				<div class="social-links">
-					<a href="#"><i class="fab fa-facebook-f"></i></a>
-					<a href="#"><i class="fab fa-twitter"></i></a>
 					<a href="#"><i class="fab fa-instagram"></i></a>
-					<a href="#"><i class="fab fa-linkedin-in"></i></a>
+					<a href="#"><i class="fab fa-github"></i></a>
 				</div>
 			</div>
 		</div>
@@ -54,6 +49,7 @@
 	}
 	.row {
 		display: flex;
+		justify-content: start;
 		flex-wrap: wrap;
 	}
 	ul {
@@ -120,13 +116,13 @@
 	}
 
 	/*responsive*/
-	@media (max-width: 767px) {
+	@media (max-width: 507px) {
 		.footer-col {
 			width: 50%;
 			margin-bottom: 30px;
 		}
 	}
-	@media (max-width: 574px) {
+	@media (max-width: 430px) {
 		.footer-col {
 			width: 100%;
 		}

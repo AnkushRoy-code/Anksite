@@ -127,21 +127,21 @@
 			<path
 				id="topPath"
 				stroke-width="3"
-				stroke="#9399b2"
+				stroke="#a6e3a1"
 				stroke-linecap="round"
 				d="M 2 2.5 L 20 2.5"
 			/>
 			<path
 				id="middlePath"
 				stroke-width="3"
-				stroke="#9399b2"
+				stroke="#a6e3a1"
 				stroke-linecap="round"
 				d="M 2 9.423 L 20 9.423"
 			/>
 			<path
 				id="bottomPath"
 				stroke-width="3"
-				stroke="#9399b2"
+				stroke="#a6e3a1"
 				stroke-linecap="round"
 				d="M 2 16.346 L 20 16.346"
 			/>
