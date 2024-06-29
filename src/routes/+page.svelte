@@ -22,11 +22,13 @@
 			rgba(148, 226, 213, 1) 100%
 		);
 		height: 400vh;
+		height: 400svh;
 		width: 100vw;
 	}
 
 	.content {
 		height: 100vh;
+		height: 100svh;
 		width: 100vw;
 	}
 

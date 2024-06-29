@@ -1,11 +1,11 @@
 <script>
 	import { onMount } from 'svelte';
 	import gsap from 'gsap';
-	import Links from './Links.svelte';
 
 	let open = false;
 	let sidebar;
 	let sidebarWrapper;
+	let linksContainer;
 
 	function toggleMenu() {
 		open = !open;
@@ -22,12 +22,14 @@
 				duration: 0.5,
 				ease: 'power4.out'
 			});
+			animateLinksIn();
 		} else {
 			gsap.to(sidebar, {
 				clipPath: 'circle(25px at 2.5em 2.5em)',
 				duration: 0.5,
 				ease: 'power4.in'
 			});
+			animateLinksOut();
 		}
 	}
 
@@ -54,9 +56,53 @@
 		}
 	}
 
+	function animateLinksIn() {
+		if (linksContainer && linksContainer.querySelectorAll) {
+			const linkElements = linksContainer.querySelectorAll('.link');
+			gsap.fromTo(
+				linkElements,
+				{ y: 30, opacity: 0 },
+				{ y: 0, opacity: 1, stagger: 0.05, duration: 0.2, ease: 'power2.in' }
+			);
+		}
+	}
+
+	function animateLinksOut() {
+		if (linksContainer && linksContainer.querySelectorAll) {
+			const linkElements = linksContainer.querySelectorAll('.link');
+			gsap.to(linkElements, {
+				y: 50,
+				opacity: 0,
+				stagger: -0.1,
+				duration: 0.1,
+				ease: 'power2.in'
+			});
+		}
+	}
+
+	function addLinkHoverEffects() {
+		const linkElements = linksContainer.querySelectorAll('.link');
+
+		linkElements.forEach((link) => {
+			link.addEventListener('mouseenter', () => {
+				gsap.to(link, { scale: 1.1, duration: 0.2, ease: 'power2.out' });
+			});
+			link.addEventListener('mouseleave', () => {
+				gsap.to(link, { scale: 1, duration: 0.2, ease: 'power2.out' });
+			});
+			link.addEventListener('mousedown', () => {
+				gsap.to(link, { scale: 0.95, duration: 0.1, ease: 'power2.in' });
+			});
+			link.addEventListener('mouseup', () => {
+				gsap.to(link, { scale: 1.1, duration: 0.1, ease: 'power2.out' });
+			});
+		});
+	}
+
 	onMount(() => {
 		gsap.set(sidebar, { clipPath: 'circle(25px at 2.5em 2.5em)' });
 		document.addEventListener('click', handleClickOutside);
+		addLinkHoverEffects();
 
 		return () => {
 			document.removeEventListener('click', handleClickOutside);
@@ -66,28 +112,36 @@
 
 <div class="sidebar-wrapper" bind:this={sidebarWrapper}>
 	<div bind:this={sidebar} class="sidebar">
-		<Links />
+		<div class="links" bind:this={linksContainer}>
+			<a href="/" class="link">Home</a>
+			<a href="/aboutme" class="link">About Me</a>
+			<a href="/projects" class="link">Projects</a>
+			<a href="/skills" class="link">Skills</a>
+			<a href="/contact" class="link">Contact</a>
+			<a href="/achievements" class="link">Achievements</a>
+			<a href="/hobbies" class="link">Hobbies And Interests</a>
+		</div>
 	</div>
 	<button class="menu-toggle" on:click={toggleMenu}>
 		<svg width="23" height="23" viewBox="0 0 23 23">
 			<path
 				id="topPath"
 				stroke-width="3"
-				stroke="#11111b"
+				stroke="#9399b2"
 				stroke-linecap="round"
 				d="M 2 2.5 L 20 2.5"
 			/>
 			<path
 				id="middlePath"
 				stroke-width="3"
-				stroke="#11111b"
+				stroke="#9399b2"
 				stroke-linecap="round"
 				d="M 2 9.423 L 20 9.423"
 			/>
 			<path
 				id="bottomPath"
 				stroke-width="3"
-				stroke="#11111b"
+				stroke="#9399b2"
 				stroke-linecap="round"
 				d="M 2 16.346 L 20 16.346"
 			/>
@@ -109,7 +163,7 @@
 		left: 0;
 		bottom: 0;
 		width: 400px;
-		background: #89dceb;
+		background: #181825;
 	}
 	.menu-toggle {
 		z-index: 999;
@@ -123,5 +177,20 @@
 		border: none;
 		cursor: pointer;
 		background: none;
+	}
+	.links {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 5%;
+	}
+	.link {
+		font-size: 25px;
+		color: #bac2de;
+		text-decoration: none;
 	}
 </style>

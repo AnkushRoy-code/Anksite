@@ -6,7 +6,7 @@
 	main {
 		background: rgb(78, 82, 171);
 		background: linear-gradient(
-			0deg,
+			45deg,
 			rgba(78, 82, 171, 1) 0%,
 			rgba(116, 199, 236, 1) 50%,
 			rgba(148, 226, 213, 1) 100%
