@@ -196,6 +196,7 @@
 
 	.ankush {
 		height: 468px;
+		width: 80%;
 		position: absolute;
 		z-index: 0;
 		right: 6em;
@@ -204,7 +205,8 @@
 		border-color: transparent #a6e3a1 #a6e3a1 transparent;
 	}
 	.ankushimg {
-		position: relative;
+		position: inherit;
+		right: 0;
 		z-index: 0;
 	}
 	@media (max-width: 800px) {

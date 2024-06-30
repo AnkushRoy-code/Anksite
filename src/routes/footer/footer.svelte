@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <footer class="footer">
 	<div class="container">
 		<div class="row">
@@ -8,7 +5,9 @@
 				<h4>myself</h4>
 				<ul>
 					<li><a href="#">about me</a></li>
-					<li><a href="#">my projects</a></li>
+					<li><a href="#">skills</a></li>
+					<li><a href="#">achivements</a></li>
+					<li><a href="#">hobbies and interests</a></li>
 					<li><a href="#">my dev workflow</a></li>
 				</ul>
 			</div>
@@ -58,6 +57,7 @@
 	.footer {
 		background-color: #1e1e2e;
 		padding: 70px 0;
+		z-index: 99;
 	}
 	.footer-col {
 		width: 25%;
