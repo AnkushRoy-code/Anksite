@@ -23,16 +23,17 @@
 			<div class="footer-col">
 				<h4>contact me</h4>
 				<ul>
-					<li><a href="#">email</a></li>
-					<li><a href="#">telegram</a></li>
-					<li><a href="#">discord</a></li>
+					<li><a href="mailto:ankush3411111@gmail.com">email</a></li>
+					<li><a href="https://t.me/AnkushRoy1729">telegram</a></li>
+					<li><a href="https://discordapp.com/users/763979094052175933">discord</a></li>
+					<li><a href="https://www.reddit.com/user/potato-_-69/">reddit</a></li>
 				</ul>
 			</div>
 			<div class="footer-col">
 				<h4>follow me</h4>
 				<div class="social-links">
-					<a href="#"><i class="fab fa-instagram"></i></a>
-					<a href="#"><i class="fab fa-github"></i></a>
+					<a href="https://www.instagram.com/potato.___.69/"><i class="fab fa-instagram"></i></a>
+					<a href="https://github.com/AnkushRoy-code"><i class="fab fa-github"></i></a>
 				</div>
 			</div>
 		</div>

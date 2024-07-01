@@ -25,10 +25,19 @@
 </script>
 
 <main>
-	<section class="normal first"></section>
-	<section class="second"></section>
+	<section class="normal first">
+		<div class="text">
+			<h2>About Me</h2>
+			<p>
+				Hi! My name is Ankush Roy, and I'm a high school student from India.<br /> I have passion
+				for mathematics and C++ programming. <br /> My dream is to become a great mathematician one day.
+			</p>
+		</div>
+	</section>
 	<div id="container">
-		<section class="left abnormal"></section>
+		<section class="left abnormal">
+			<h1>Hi ai am a text :)</h1>
+		</section>
 		<section class="right abnormal"></section>
 		<section class="down abnormal"></section>
 	</div>
@@ -38,34 +47,47 @@
 
 <style>
 	main {
-		background: purple;
+		background-color: #060032;
+		opacity: 0.8;
+		background-image: radial-gradient(#00f3ff 2px, transparent 2px),
+			radial-gradient(#00f3ff 2px, #060032 2px);
+		background-size: 80px 80px;
+		background-position:
+			0 0,
+			40px 40px;
 		width: 100 vw;
 	}
-	h1 {
-		position: relative;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		text-align: center;
-	}
+
 	section {
 		position: relative;
 		height: 100vh;
-		height: 100svh;
+		height: 100lvh;
 		width: 100vw;
 	}
 
 	.normal {
 		width: 100vw;
-		height: 100vh;
+		height: 100lvh;
 	}
 	.first {
-		background-color: green;
+		background-color: #060032;
+		opacity: 1;
+		background-image: radial-gradient(#00f3ff 2px, transparent 2px),
+			radial-gradient(#00f3ff 2px, #060032 2px);
+		background-size: 80px 80px;
+		background-position:
+			0 0,
+			40px 40px;
+		color: #cdd6f4;
 	}
-	.second {
-		background-color: darkseagreen;
-		position: absolute;
-		top: 100%;
+
+	.first div {
+		max-width: fit-content;
+		padding: 2em;
+		border-radius: 10px;
+		background-color: #11111b;
+		position: relative;
+		display: grid;
 	}
 
 	.abnormal {
@@ -78,12 +100,17 @@
 	.left {
 		background-color: blue;
 	}
+
+	.left h1 {
+		position: relative;
+		top: 50%;
+	}
 	.down {
 		background-color: white;
 	}
 
 	.secondlast {
-		background-color: aliceblue;
+		background-color: rgb(8, 40, 69);
 	}
 
 	.last {
