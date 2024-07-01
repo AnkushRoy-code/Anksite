@@ -27,12 +27,15 @@
 <main>
 	<section class="normal first">
 		<div class="text">
-			<h2>About Me</h2>
+			<h2>About <span>Me</span></h2>
 			<p>
-				Hi! My name is Ankush Roy, and I'm a high school student from India.<br /> I have passion
-				for mathematics and C++ programming. <br /> My dream is to become a great mathematician one day.
+				Hi! My name is <span>Ankush Roy</span> , and I'm a high school student from
+				<span>India</span>.<br /> I have passion for <span>mathematics</span> and <span>C++</span>
+				programming. <br /> My dream is to become a great <span class="goal">mathematician</span>
+				one day.
 			</p>
 		</div>
+		<img src="/ankush2.jpg" alt="my face" />
 	</section>
 	<div id="container">
 		<section class="left abnormal">
@@ -79,17 +82,35 @@
 			0 0,
 			40px 40px;
 		color: #cdd6f4;
+		display: flex;
+		padding: 4rem;
+		justify-content: space-between;
 	}
 
 	.first div {
 		max-width: fit-content;
+		max-height: fit-content;
 		padding: 2em;
 		border-radius: 10px;
-		background-color: #11111b;
-		position: relative;
-		display: grid;
+		background-color: #11111b80;
+		backdrop-filter: blur(4px);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
 	}
 
+	.first div h2 {
+		font-size: 6rem;
+	}
+	.first div h2 span {
+		color: #f38ba8;
+	}
+	.first div p span {
+		color: #94e2d5;
+	}
+	.first div p .goal {
+		color: red;
+	}
 	.abnormal {
 		position: absolute;
 		top: 0%;

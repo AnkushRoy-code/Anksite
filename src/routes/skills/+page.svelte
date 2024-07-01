@@ -79,7 +79,7 @@
 		width: calc(100% - 40px);
 		height: calc(100% - 40px);
 
-		background-color: #dedede;
+		background-color: #f10707;
 		opacity: 0;
 		transform: scale(0.6);
 	}
