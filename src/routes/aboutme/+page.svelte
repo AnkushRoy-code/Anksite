@@ -141,7 +141,35 @@
 			my free time.
 		</p>
 	</section>
-	<section class="normal last"></section>
+	<section class="normal last">
+		<h1>Inspirations</h1>
+		<p>
+			My journey in mathematics and programming has been influenced by several individuals and
+			ideas:
+		</p>
+		<ul>
+			<li>
+				<strong>Srinivasa Ramanujan:</strong> His incredible contributions to mathematics, despite facing
+				numerous challenges, have been a major source of inspiration for me.
+			</li>
+			<li>
+				<strong>Arunava Majumder Sir:</strong> My mathematics teacher at school who ignited my passion
+				for the subject and guided me to explore its depths.
+			</li>
+			<li>
+				<strong>My Mother:</strong> Her unwavering support and encouragement have been crucial in my
+				academic and personal growth.
+			</li>
+			<li>
+				<strong>My Highly Talented Friends:</strong> They constantly challenge and motivate me to improve
+				and learn new things.
+			</li>
+			<li>
+				<strong>My Other School Teachers and Relatives:</strong> Their guidance and support have played
+				a significant role in shaping my journey and achievements.
+			</li>
+		</ul>
+	</section>
 </main>
 
 <style>
@@ -249,7 +277,8 @@
 
 	.left,
 	.right,
-	.secondlast {
+	.secondlast,
+	.last {
 		padding: 4rem;
 		display: flex;
 		flex-direction: column;

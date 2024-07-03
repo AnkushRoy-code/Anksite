@@ -118,7 +118,6 @@
 			<a href="/projects" class="link">Projects</a>
 			<a href="/skills" class="link">Skills</a>
 			<a href="/contact" class="link">Contact</a>
-			<a href="/achievements" class="link">Achievements</a>
 			<a href="/hobbies" class="link">Hobbies And Interests</a>
 		</div>
 	</div>

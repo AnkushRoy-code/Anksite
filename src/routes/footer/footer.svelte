@@ -6,7 +6,6 @@
 				<ul>
 					<li><a href="#">about me</a></li>
 					<li><a href="#">skills</a></li>
-					<li><a href="#">achivements</a></li>
 					<li><a href="#">hobbies and interests</a></li>
 					<li><a href="#">my dev workflow</a></li>
 				</ul>
