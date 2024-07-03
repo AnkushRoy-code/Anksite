@@ -32,7 +32,7 @@
 			</p>
 		</div>
 		<div class="ankush">
-			<img src="/ankush.png" alt="myself ankush" class="ankushimg" />
+			<img src="/ankush.webp" alt="myself ankush" class="ankushimg" />
 		</div>
 		<div class="scrolldown">
 			<p class="hide">Scroll Down</p>
