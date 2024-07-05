@@ -5,14 +5,10 @@
 <style>
 	main {
 		background: rgb(78, 82, 171);
-		background: linear-gradient(
-			230deg,
-			rgba(78, 82, 171, 1) 0%,
-			rgba(116, 199, 236, 1) 50%,
-			rgba(148, 226, 213, 1) 100%
-		);
-		height: 400vh;
-		height: 400svh;
+		background: linear-gradient(var(--mocha-teal), var(--mocha-rosewater));
+		background: linear-gradient(in lch, var(--mocha-teal), var(--mocha-rosewater));
+
+		height: 100vh;
 		width: 100svw;
 	}
 </style>

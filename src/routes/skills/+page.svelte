@@ -132,8 +132,6 @@
 </main>
 
 <style>
-	@import '../../lib/color.css';
-
 	main {
 		background-color: var(--mocha-sapphire);
 		padding-top: 1rem;

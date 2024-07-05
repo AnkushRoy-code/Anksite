@@ -6,17 +6,16 @@
 				<ul>
 					<li><a href="/aboutme">about me</a></li>
 					<li><a href="/skills">skills</a></li>
-					<li><a href="#">hobbies and interests</a></li>
 					<li><a href="/aboutme#df">my dev workflow</a></li>
 				</ul>
 			</div>
 			<div class="footer-col">
 				<h4>projects</h4>
 				<ul>
-					<li><a href="#">game of life</a></li>
-					<li><a href="#">ecosight</a></li>
-					<li><a href="#">particle life</a></li>
-					<li><a href="#">streamer hub</a></li>
+					<li><a href="/projects#game">game of life</a></li>
+					<li><a href="/projects#eco">ecosight</a></li>
+					<li><a href="/projects#particle">particle life</a></li>
+					<li><a href="/projects#stream">streamer hub</a></li>
 				</ul>
 			</div>
 			<div class="footer-col">
@@ -41,7 +40,6 @@
 
 <style>
 	@import '@fortawesome/fontawesome-free/css/all.min.css';
-	@import '../../lib/color.css';
 
 	.container {
 		max-width: 1170px;

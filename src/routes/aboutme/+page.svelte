@@ -84,7 +84,7 @@
 			</p>
 		</section>
 
-		<section class="right abnormal">
+		<section id="interest" class="right abnormal">
 			<h1>Personal Interests</h1>
 			<p>
 				Beyond my passion for programming and mathematics, I have a variety of other interests. I
@@ -174,8 +174,6 @@
 </main>
 
 <style>
-	@import '../../lib/color.css';
-
 	main {
 		background-color: var(--mocha-mantle);
 		opacity: 1;

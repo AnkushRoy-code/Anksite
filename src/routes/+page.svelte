@@ -53,8 +53,6 @@
 </main>
 
 <style>
-	@import '../lib/color.css';
-
 	main {
 		background: rgb(78, 82, 171);
 		background: linear-gradient(
