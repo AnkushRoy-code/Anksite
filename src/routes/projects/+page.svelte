@@ -12,13 +12,20 @@
 					grid for a fresh start. These enhancements make it easier to observe and understand the
 					complex, emergent behaviors that arise from Conway's simple rules.
 				</p>
+				<div class="buttons">
+					<p class="coolbuttoncontainer">
+						<a class="coolbutton btn btn--hero" href="https://github.com/AnkushRoy-code/gameOfLife"
+							>GitHub Repo</a
+						>
+					</p>
+				</div>
 			</div>
 			<img src="/gameOfLife.webp" alt="" />
 		</div>
 	</section>
 	<section id="eco" class="EcoSight">
 		<div class="container">
-			<div>
+			<div class="text">
 				<h1>Ecosight</h1>
 				<p>
 					This project, developed by my team and me during a GeeksForGeeks hackathon. We created an
@@ -26,13 +33,26 @@
 					interface. Our work focused on environmental concerns, featuring analyses such as carbon
 					footprint assessment and satellite image classification.
 				</p>
+				<div class="buttons">
+					<p class="coolbuttoncontainer">
+						<a
+							class="coolbutton btn btn--hero"
+							href="https://github.com/ShibamRoy9826/EcoSight-Geek-a-thon-project">GitHub Repo</a
+						>
+					</p>
+					<p class="coolbuttoncontainer">
+						<a class="coolbutton btn btn--hero" href="https://ecosight.pythonanywhere.com/"
+							>Website</a
+						>
+					</p>
+				</div>
 			</div>
 			<img src="/ecosight.webp" alt="" />
 		</div>
 	</section>
 	<section id="particle" class="ParticleLife">
 		<div class="container">
-			<div>
+			<div class="text">
 				<h1>Particle Life Simulation</h1>
 				<p>
 					I created a Particle Life simulation using C++, SDL2, and Dear ImGui. This application
@@ -43,13 +63,20 @@
 					unpredictable behaviors. You just watch particles react with themselves beautifully with
 					just some simple defined rules.
 				</p>
+				<div class="buttons">
+					<p class="coolbuttoncontainer">
+						<a class="coolbutton btn btn--hero" href="https://github.com/AnkushRoy-code/Particle"
+							>GitHub Repo</a
+						>
+					</p>
+				</div>
 			</div>
 			<img src="/particle.webp" alt="" />
 		</div>
 	</section>
 	<section id="stream" class="StreamerHub">
 		<div class="container">
-			<div>
+			<div class="text">
 				<h1>Streamer Hub</h1>
 				<p>
 					I developed StreamerHub, a frontend application using React and GSAP. StreamerHub serves
@@ -59,6 +86,13 @@
 					capabilities, StreamerHub delivers a dynamic and visually engaging platform tailored for
 					streamers and their audiences.
 				</p>
+				<div class="buttons">
+					<p class="coolbuttoncontainer">
+						<a class="coolbutton btn btn--hero" href="https://github.com/AnkushRoy-code/StreamerHub"
+							>GitHub Repo</a
+						>
+					</p>
+				</div>
 			</div>
 			<img src="/stream.webp" alt="" />
 		</div>
@@ -108,5 +142,67 @@
 	.StreamerHub {
 		background-color: var(--mocha-crust);
 		color: var(--mocha-subtext0);
+	}
+
+	.coolbuttoncontainer {
+		display: flex;
+	}
+
+	.coolbutton {
+		font-size: 1.4rem;
+		text-decoration: none;
+	}
+	.btn {
+		display: inline-block;
+		position: relative;
+		padding: 0.6rem 10px;
+		font-weight: bold;
+		line-height: 1;
+		z-index: 1;
+		transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+		color: var(--mocha-lavender);
+	}
+
+	.btn::after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 0px;
+		height: 100%;
+		left: 0;
+		bottom: 0;
+		z-index: -1;
+		transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+	}
+
+	.btn--hero {
+		border-width: 2px;
+		border-style: solid;
+		border-image-slice: 1;
+		border-color: var(--mocha-lavender);
+	}
+
+	.btn--hero::after {
+		background-color: var(--mocha-lavender);
+	}
+
+	.btn--hero:hover {
+		-webkit-text-fill-color: var(--mocha-crust);
+		text-decoration: none;
+	}
+
+	.btn--hero:hover::after {
+		width: 100%;
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		padding-right: 2rem;
+	}
+	.buttons {
+		display: flex;
+		gap: 1em;
 	}
 </style>

@@ -3,6 +3,3 @@
 </script>
 
 <Sidebar />
-
-<style>
-</style>

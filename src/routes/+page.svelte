@@ -217,8 +217,9 @@
 
 	.item img {
 		width: 10vw;
-		height: auto;
+		height: 50vh;
 		display: block;
+		object-fit: cover;
 	}
 
 	.list {
