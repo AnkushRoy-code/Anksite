@@ -4,10 +4,10 @@
 			<div class="footer-col">
 				<h4>myself</h4>
 				<ul>
-					<li><a href="#">about me</a></li>
-					<li><a href="#">skills</a></li>
+					<li><a href="/aboutme">about me</a></li>
+					<li><a href="/skills">skills</a></li>
 					<li><a href="#">hobbies and interests</a></li>
-					<li><a href="#">my dev workflow</a></li>
+					<li><a href="/aboutme#df">my dev workflow</a></li>
 				</ul>
 			</div>
 			<div class="footer-col">
@@ -41,6 +41,7 @@
 
 <style>
 	@import '@fortawesome/fontawesome-free/css/all.min.css';
+	@import '../../lib/color.css';
 
 	.container {
 		max-width: 1170px;
@@ -55,7 +56,7 @@
 		list-style: none;
 	}
 	.footer {
-		background-color: #1e1e2e;
+		background-color: var(--mocha-base);
 		padding: 70px 0;
 		z-index: 99;
 	}
@@ -65,7 +66,7 @@
 	}
 	.footer-col h4 {
 		font-size: 18px;
-		color: #cdd6f4;
+		color: var(--mocha-text);
 		text-transform: capitalize;
 		margin-bottom: 35px;
 		font-weight: 500;
@@ -76,7 +77,7 @@
 		position: absolute;
 		left: 0;
 		bottom: -10px;
-		background-color: #89dceb;
+		background-color: var(--mocha-sky);
 		height: 2px;
 		box-sizing: border-box;
 		width: 50px;
@@ -90,7 +91,7 @@
 		color: #ffffff;
 		text-decoration: none;
 		font-weight: 300;
-		color: #a6adc8;
+		color: var(--mocha-subtext0);
 		display: block;
 		transition: all 0.3s ease;
 	}
@@ -107,12 +108,12 @@
 		text-align: center;
 		line-height: 40px;
 		border-radius: 50%;
-		color: #bac2de;
+		color: var(--mocha-subtext1);
 		transition: all 0.5s ease;
 	}
 	.footer-col .social-links a:hover {
 		color: #24262b;
-		background-color: #bac2de;
+		background-color: var(--mocha-subtext1);
 	}
 
 	/*responsive*/

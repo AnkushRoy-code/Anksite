@@ -1,5 +1,8 @@
 <main>
-	<div></div>
+	<section class="gameOfLife"></section>
+	<section class="EcoSight"></section>
+	<section class="ParticleLife"></section>
+	<section class="StreamerHub"></section>
 </main>
 
 <style>

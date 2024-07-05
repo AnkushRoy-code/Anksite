@@ -21,6 +21,8 @@
 <Footer />
 
 <style>
+	@import '../lib/color.css';
+
 	.loader {
 		position: fixed;
 		top: 0;
@@ -29,7 +31,7 @@
 		right: 0;
 		display: grid;
 		place-items: center;
-		background-color: #11111b;
+		background-color: var(--mocha-crust);
 		z-index: 9999;
 	}
 </style>

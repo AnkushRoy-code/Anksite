@@ -41,7 +41,7 @@
 </script>
 
 <main>
-	<section class="normal first">
+	<section class="normal first" id="as">
 		<div class="text">
 			<h2>About <span>Me</span></h2>
 			<p>
@@ -84,61 +84,62 @@
 			</p>
 		</section>
 
-		<!-- my dev workflow -->
-		<section class="right abnormal devworkflow">
-			<h1>Dev Workflow</h1>
-			<h3>Softwares</h3>
+		<section class="right abnormal">
+			<h1>Personal Interests</h1>
 			<p>
-				In my dev workflow, I use i3wm with Arch Linux as my daily driver, complemented by Picom for
-				compositing and autotiling to manage window layouts efficiently. My primary editor is
-				Neovim, which I have customized extensively to suit my coding style. For my terminal
-				emulator, I rely on Konsole, and I use Tmux as my terminal multiplexer to handle multiple
-				terminal sessions within a single window.
-			</p>
-			<h3>Keyboard</h3>
-			<p>
-				I type using the Colemak layout, which I find more comfortable and efficient than the
-				traditional QWERTY layout. I also use KMonad for managing keyboard layers, allowing me to
-				maximize my productivity by customizing keybindings.
-			</p>
-			<h3>Laptop Sepcs</h3>
-			<p>
-				My development machine is an older HP laptop with a Core 2 Duo processor, 3GB of RAM, and a
-				300GB HDD. Despite its age, it serves my needs well with a lightweight setup. I use a
-				full-sized membrane keyboard and a decent mouse to enhance my workflow.
+				Beyond my passion for programming and mathematics, I have a variety of other interests. I
+				enjoy playing chess and often participate in local tournaments to sharpen my strategic
+				thinking skills. In my free time, I like to read books on a wide range of topics, from
+				science fiction to historical biographies. I also have a growing interest in digital art and
+				have been experimenting with creating simple animations using my programming skills.
+				Additionally, I love exploring new technologies and keeping up with the latest trends in the
+				tech world.
 			</p>
 			<p>
-				This combination of tools and configurations allows me to maintain a productive and
-				efficient development environment, tailored to my preferences and requirements.
-			</p>
-			<p class="coolbuttoncontainer">
-				<a class="coolbutton btn btn--hero" href="https://github.com/AnkushRoy-code/dotfiles"
-					>Dev Workflow GitHub</a
-				>
+				I know that's a lot about me already, but there's more! I have a keen interest in music and
+				often find myself exploring different genres to relax and unwind. I also enjoy outdoor
+				activities like hiking and cycling, which help me stay active and connected with nature.
+				Lastly, I have a passion for cooking and love experimenting with new recipes and cuisines in
+				my free time.
 			</p>
 		</section>
 
 		<section class="down abnormal">
-			<h1>that is all there is to me folks!</h1>
+			<h1>and theres even more i can talk about myself!</h1>
 		</section>
 	</div>
-	<section class="normal secondlast">
-		<h1>Personal Interests</h1>
+	<!-- my dev workflow -->
+
+	<section id="df" class="normal secondlast devworkflow">
+		<h1>Dev Workflow</h1>
+		<h3>Softwares</h3>
 		<p>
-			I know I said that I said everything about me already but theres more. Beyond my passion for
-			programming and mathematics, I have a variety of other interests. I enjoy playing chess and
-			often participate in local tournaments to sharpen my strategic thinking skills. In my free
-			time, I like to read books on a wide range of topics, from science fiction to historical
-			biographies. I also have a growing interest in digital art and have been experimenting with
-			creating simple animations using my programming skills. Additionally, I love exploring new
-			technologies and keeping up with the latest trends in the tech world.
+			In my dev workflow, I use i3wm with Arch Linux as my daily driver, complemented by Picom for
+			compositing and autotiling to manage window layouts efficiently. My primary editor is Neovim,
+			which I have customized extensively to suit my coding style. For my terminal emulator, I rely
+			on Konsole, and I use Tmux as my terminal multiplexer to handle multiple terminal sessions
+			within a single window.
+		</p>
+		<h3>Keyboard</h3>
+		<p>
+			I type using the Colemak layout, which I find more comfortable and efficient than the
+			traditional QWERTY layout. I also use KMonad for managing keyboard layers, allowing me to
+			maximize my productivity by customizing keybindings.
+		</p>
+		<h3>Laptop Sepcs</h3>
+		<p>
+			My development machine is an older HP laptop with a Core 2 Duo processor, 3GB of RAM, and a
+			300GB HDD. Despite its age, it serves my needs well with a lightweight setup. I use a
+			full-sized membrane keyboard and a decent mouse to enhance my workflow.
 		</p>
 		<p>
-			I know that's a lot about me already, but there's more! I have a keen interest in music and
-			often find myself exploring different genres to relax and unwind. I also enjoy outdoor
-			activities like hiking and cycling, which help me stay active and connected with nature.
-			Lastly, I have a passion for cooking and love experimenting with new recipes and cuisines in
-			my free time.
+			This combination of tools and configurations allows me to maintain a productive and efficient
+			development environment, tailored to my preferences and requirements.
+		</p>
+		<p class="coolbuttoncontainer">
+			<a class="coolbutton btn btn--hero" href="https://github.com/AnkushRoy-code/dotfiles"
+				>Dev Workflow GitHub</a
+			>
 		</p>
 	</section>
 	<section class="normal last">
@@ -173,16 +174,18 @@
 </main>
 
 <style>
+	@import '../../lib/color.css';
+
 	main {
-		background-color: #181825;
+		background-color: var(--mocha-mantle);
 		opacity: 1;
 		background-size: 80px 80px;
 		background-image: repeating-linear-gradient(
 			to right,
-			#74c7ec,
-			#74c7ec 4px,
-			#181825 4px,
-			#181825
+			var(--mocha-sapphire),
+			var(--mocha-sapphire) 4px,
+			var(--mocha-mantle) 4px,
+			var(--mocha-mantle)
 		);
 		width: 100 vw;
 		overflow-x: hidden;
@@ -200,17 +203,17 @@
 		height: 100lvh;
 	}
 	.first {
-		background-color: #181825;
+		background-color: var(--mocha-mantle);
 		opacity: 1;
 		background-size: 80px 80px;
 		background-image: repeating-linear-gradient(
 			to right,
-			#74c7ec,
-			#74c7ec 4px,
-			#181825 4px,
-			#181825
+			var(--mocha-sapphire),
+			var(--mocha-sapphire) 4px,
+			var(--mocha-mantle) 4px,
+			var(--mocha-mantle)
 		);
-		color: #cdd6f4;
+		color: var(--mocha-text);
 		display: flex;
 		padding: 4rem;
 		justify-content: space-between;
@@ -232,47 +235,47 @@
 		font-size: 6rem;
 	}
 	.first div h2 span {
-		color: #f38ba8;
+		color: var(--mocha-red);
 	}
 	.first div p span {
-		color: #94e2d5;
+		color: var(--mocha-teal);
 	}
 	.first div p .goal {
-		color: red;
+		color: var(--mocha-red);
 	}
 	.abnormal {
 		position: absolute;
 		top: 0%;
 	}
 	.right {
-		background-color: #94e2d5;
+		background-color: #11111b;
+		color: var(--mocha-text);
 	}
 	.left {
-		background-color: #89b4fa;
+		background-color: var(--mocha-blue);
 	}
 
 	.informativeText {
 		position: absolute;
-		background-color: #11111b;
+		background-color: var(--mocha-crust);
 		padding: 3rem;
 		border-radius: 20px;
 		z-index: 1;
 	}
 
 	.informativeText h1 {
-		color: #cdd6f4;
+		color: var(--mocha-text);
 	}
 	.down {
-		background-color: #1e1e2e;
+		background-color: var(--mocha-base);
 	}
 
 	.secondlast {
-		background-color: #11111b;
-		color: #cdd6f4;
+		background-color: var(--mocha-teal);
 	}
 
 	.last {
-		background-color: #f38ba8;
+		background-color: var(--mocha-red);
 	}
 
 	.left,
@@ -301,7 +304,7 @@
 		line-height: 1;
 		z-index: 1;
 		transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
-		color: #11111b;
+		color: var(--mocha-crust);
 	}
 
 	.btn::after {
@@ -320,15 +323,15 @@
 		border-width: 2px;
 		border-style: solid;
 		border-image-slice: 1;
-		border-color: #1e1e2e;
+		border-color: var(--mocha-base);
 	}
 
 	.btn--hero::after {
-		background-color: #1e1e2e;
+		background-color: var(--mocha-base);
 	}
 
 	.btn--hero:hover {
-		-webkit-text-fill-color: #89dceb;
+		-webkit-text-fill-color: var(--mocha-sky);
 		text-decoration: none;
 	}
 
@@ -343,6 +346,10 @@
 	}
 	.down h1 {
 		text-transform: capitalize;
-		color: #cdd6f4;
+		color: var(--mocha-text);
+	}
+
+	.last {
+		height: 70vh;
 	}
 </style>

@@ -132,19 +132,21 @@
 </main>
 
 <style>
+	@import '../../lib/color.css';
+
 	main {
-		background-color: #74c7ec;
+		background-color: var(--mocha-sapphire);
 		padding-top: 1rem;
 	}
 
 	.skillshead {
 		position: relative;
 		width: 80%;
-		background-color: #11111b;
+		background-color: var(--mocha-crust);
 		text-transform: capitalize;
 		left: 50%;
 		transform: translateX(-50%);
-		color: #a6adc8;
+		color: var(--mocha-subtext0);
 
 		padding: 1rem;
 		border-radius: 20px;
@@ -177,19 +179,19 @@
 		border-radius: 20px;
 	}
 	.first {
-		background-color: #1e1e2e;
-		color: #cdd6f4;
+		background-color: var(--mocha-base);
+		color: var(--mocha-text);
 	}
 	.second {
-		background-color: #181825;
-		color: #bac2de;
+		background-color: var(--mocha-mantle);
+		color: var(--mocha-subtext1);
 	}
 	.third {
-		background-color: #11111b;
-		color: #a6adc8;
+		background-color: var(--mocha-crust);
+		color: var(--mocha-subtext0);
 	}
 	.fourth {
-		background-color: #313244;
-		color: #b4befe;
+		background-color: var(--mocha-surface0);
+		color: var(--mocha-lavender);
 	}
 </style>

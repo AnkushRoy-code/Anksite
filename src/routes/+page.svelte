@@ -53,6 +53,8 @@
 </main>
 
 <style>
+	@import '../lib/color.css';
+
 	main {
 		background: rgb(78, 82, 171);
 		background: linear-gradient(
@@ -145,7 +147,7 @@
 		line-height: 1;
 		z-index: 1;
 		transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
-		color: #11111b;
+		color: var(--mocha-crust);
 	}
 
 	.btn::after {
@@ -164,15 +166,15 @@
 		border-width: 2px;
 		border-style: solid;
 		border-image-slice: 1;
-		border-color: #1e1e2e;
+		border-color: var(--mocha-base);
 	}
 
 	.btn--hero::after {
-		background-color: #1e1e2e;
+		background-color: var(--mocha-base);
 	}
 
 	.btn--hero:hover {
-		-webkit-text-fill-color: #89dceb;
+		-webkit-text-fill-color: var(--mocha-sky);
 		text-decoration: none;
 	}
 
@@ -180,10 +182,10 @@
 		width: 100%;
 	}
 	.name {
-		color: #89dceb;
+		color: var(--mocha-sky);
 	}
 	.love {
-		color: #b4befe;
+		color: var(--mocha-lavender);
 	}
 	@media (max-width: 500px) {
 		.herotitle {
@@ -202,7 +204,7 @@
 		right: 6em;
 		border-style: solid;
 		border-width: 0 8px 8px 0;
-		border-color: transparent #a6e3a1 #a6e3a1 transparent;
+		border-color: transparent var(--mocha-green) var(--mocha-green) transparent;
 	}
 	.ankushimg {
 		position: inherit;
