@@ -20,6 +20,20 @@
 </script>
 
 <main>
+	<div class="area">
+		<ul class="circles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
 	<section class="landing">
 		<div class="container">
 			<h1 class="herotitle">
@@ -40,14 +54,39 @@
 		</div>
 	</section>
 	<div class="content">
+		<h1>My Projects</h1>
 		<div class="list">
-			<div class="item"><img src="https://picsum.photos/200/300?random=1" alt="random" /></div>
-			<div class="item"><img src="https://picsum.photos/200/300?random=2" alt="random" /></div>
-			<div class="item"><img src="https://picsum.photos/200/300?random=3" alt="random" /></div>
-			<div class="item"><img src="https://picsum.photos/200/300?random=4" alt="random" /></div>
-			<div class="item"><img src="https://picsum.photos/200/300?random=5" alt="random" /></div>
-			<div class="item"><img src="https://picsum.photos/200/300?random=6" alt="random" /></div>
-			<div class="item"><img src="https://picsum.photos/200/300?random=7" alt="random" /></div>
+			<div class="item">
+				<a href="/projects#game"><img src="/gameoflife/first.webp" alt="random" /></a>
+			</div>
+			<div class="item">
+				<a href="/projects#game"> <img src="/gameoflife/second.webp" alt="random" /></a>
+			</div>
+			<div class="item">
+				<a href="projects#particle">
+					<img src="particle/first.webp" alt="particle simulation" />
+				</a>
+			</div>
+			<div class="item">
+				<a href="projects#particle">
+					<img src="particle/second.webp" alt="particle simulation two" />
+				</a>
+			</div>
+			<div class="item">
+				<a href="projects#eco">
+					<img src="ecosight/first.webp" alt="ecosight" />
+				</a>
+			</div>
+			<div class="item">
+				<a href="projects#stream">
+					<img src="stream/first.webp" alt="streamhub" />
+				</a>
+			</div>
+			<div class="item">
+				<a href="projects#stream">
+					<img src="stream/second.webp" alt="streamhub two" />
+				</a>
+			</div>
 		</div>
 	</div>
 </main>
@@ -57,13 +96,130 @@
 		background: rgb(78, 82, 171);
 		background: linear-gradient(
 			180deg,
-			rgba(78, 82, 171, 1) 0%,
-			rgba(116, 199, 236, 1) 50%,
+			rgba(78, 82, 171, 1) 20%,
+			rgb(19, 128, 178) 50%,
 			rgba(148, 226, 213, 1) 100%
 		);
-		height: 400vh;
-		height: 400svh;
+		height: 200vh;
+		height: 200svh;
 		width: 100vw;
+	}
+
+	.area {
+		background: transparent;
+		width: 100%;
+		height: 200vh;
+		position: absolute;
+	}
+
+	.circles {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.circles li {
+		position: absolute;
+		display: block;
+		list-style: none;
+		width: 20px;
+		height: 20px;
+		background: rgba(147, 153, 178, 0.4);
+		animation: animate 25s linear infinite;
+		bottom: -150px;
+	}
+
+	.circles li:nth-child(1) {
+		left: 25%;
+		width: 80px;
+		height: 80px;
+		animation-delay: 0s;
+	}
+
+	.circles li:nth-child(2) {
+		left: 10%;
+		width: 20px;
+		height: 20px;
+		animation-delay: 2s;
+		animation-duration: 12s;
+	}
+
+	.circles li:nth-child(3) {
+		left: 70%;
+		width: 20px;
+		height: 20px;
+		animation-delay: 4s;
+	}
+
+	.circles li:nth-child(4) {
+		left: 40%;
+		width: 60px;
+		height: 60px;
+		animation-delay: 0s;
+		animation-duration: 18s;
+	}
+
+	.circles li:nth-child(5) {
+		left: 65%;
+		width: 20px;
+		height: 20px;
+		animation-delay: 0s;
+	}
+
+	.circles li:nth-child(6) {
+		left: 75%;
+		width: 110px;
+		height: 110px;
+		animation-delay: 3s;
+	}
+
+	.circles li:nth-child(7) {
+		left: 35%;
+		width: 150px;
+		height: 150px;
+		animation-delay: 7s;
+	}
+
+	.circles li:nth-child(8) {
+		left: 50%;
+		width: 25px;
+		height: 25px;
+		animation-delay: 15s;
+		animation-duration: 45s;
+	}
+
+	.circles li:nth-child(9) {
+		left: 20%;
+		width: 15px;
+		height: 15px;
+		animation-delay: 2s;
+		animation-duration: 35s;
+	}
+
+	.circles li:nth-child(10) {
+		left: 85%;
+		width: 150px;
+		height: 150px;
+		animation-delay: 0s;
+		animation-duration: 11s;
+	}
+
+	@keyframes animate {
+		0% {
+			transform: translateY(0) rotate(0deg);
+			opacity: 1;
+			border-radius: 0;
+			background: rgba(30, 30, 46, 0.4);
+		}
+		100% {
+			transform: translateY(-200vh) rotate(720deg);
+			opacity: 0;
+			border-radius: 50%;
+			background: rgba(210, 217, 245, 0.8);
+		}
 	}
 
 	.landing {
@@ -135,6 +291,14 @@
 		height: 100vh;
 		height: 100svh;
 		width: 100vw;
+	}
+
+	.content h1 {
+		color: var(--mocha-base);
+		padding-top: 4rem;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	.btn {
@@ -219,7 +383,7 @@
 		width: 10vw;
 		height: 50vh;
 		display: block;
-		object-fit: cover;
+		object-fit: fill;
 	}
 
 	.list {
@@ -238,7 +402,7 @@
 	.item {
 		flex: 0 0 auto;
 		transition: 0.5s;
-		filter: brightness(0);
+		filter: brightness(0.1);
 	}
 
 	.item:hover {

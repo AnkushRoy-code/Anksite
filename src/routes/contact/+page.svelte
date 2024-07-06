@@ -75,7 +75,7 @@
 
 <style>
 	main {
-		padding: 5rem;
+		padding: 4rem 5rem 0;
 		background-color: var(--mocha-surface0);
 		color: var(--mocha-text);
 		min-height: 100vh;
@@ -85,8 +85,11 @@
 		display: flex;
 		flex-direction: column;
 		min-width: 70vw;
+		max-width: 90vw;
+		min-height: 70vh;
+		max-height: 90vh;
 		margin: auto;
-		padding: 20px;
+		padding: 4rem;
 		border: 1px solid var(--mocha-overlay1);
 		border-radius: 10px;
 		background-color: var(--mocha-base);

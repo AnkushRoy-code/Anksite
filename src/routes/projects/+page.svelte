@@ -20,7 +20,7 @@
 					</p>
 				</div>
 			</div>
-			<img src="/gameOfLife.webp" alt="" />
+			<img src="/gameoflife/gameOfLife.webp" alt="" />
 		</div>
 	</section>
 	<section id="eco" class="EcoSight">
@@ -47,7 +47,7 @@
 					</p>
 				</div>
 			</div>
-			<img src="/ecosight.webp" alt="" />
+			<img src="/ecosight/ecosight.webp" alt="" />
 		</div>
 	</section>
 	<section id="particle" class="ParticleLife">
@@ -71,7 +71,7 @@
 					</p>
 				</div>
 			</div>
-			<img src="/particle.webp" alt="" />
+			<img src="/particle/particle.webp" alt="" />
 		</div>
 	</section>
 	<section id="stream" class="StreamerHub">
@@ -94,7 +94,7 @@
 					</p>
 				</div>
 			</div>
-			<img src="/stream.webp" alt="" />
+			<img src="/stream/stream.webp" alt="" />
 		</div>
 	</section>
 </main>
