@@ -12,9 +12,11 @@
 			<div class="footer-col">
 				<h4>projects</h4>
 				<ul>
+					<li><a href="https://ankushroy-code.github.io/Garage/">Garage</a></li>
+					<li><a href="https://github.com/AnkushRoy-code/Platformer">Platformer</a></li>
+					<li><a href="/projects#particle">particle life</a></li>
 					<li><a href="/projects#game">game of life</a></li>
 					<li><a href="/projects#eco">ecosight</a></li>
-					<li><a href="/projects#particle">particle life</a></li>
 					<li><a href="/projects#stream">streamer hub</a></li>
 				</ul>
 			</div>

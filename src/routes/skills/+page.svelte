@@ -73,7 +73,7 @@
                     <strong>HTML & CSS:</strong> Good enought to make something good.
 				</li>
                 <li>
-                    <strong>And Many Others!</strong> Don't keep count! I learn a lot forget a lot.
+                    <strong>And Many Others!</strong> Don't keep count! Learn a lot forget a lot.
                 </li>
 			</ul>
 		</div>

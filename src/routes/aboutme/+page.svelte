@@ -117,7 +117,7 @@
 			In my dev workflow, I use i3wm with Arch Linux as my daily driver, complemented by Picom for
 			compositing and autotiling to manage window layouts efficiently. My primary editor is Neovim,
 			which I have customized extensively to suit my coding style. For my terminal emulator, I rely
-			on Konsole, and I use Tmux as my terminal multiplexer to handle multiple terminal sessions
+			on ST, and I use Tmux as my terminal multiplexer to handle multiple terminal sessions
 			within a single window.
 		</p>
 		<h3>Keyboard</h3>
@@ -130,7 +130,8 @@
 		<p>
 			My development machine is an older HP laptop with a Core 2 Duo processor, 3GB of RAM, and a
 			300GB HDD. Despite its age, it serves my needs well with a lightweight setup. I use a
-			full-sized membrane keyboard and a decent mouse to enhance my workflow.
+			full-sized membrane keyboard and a very decent and expensive mouse (MX3s) to enhance my workflow.
+            Which I won from <a href="https://hackclub.com">HackClub!</a>.
 		</p>
 		<p>
 			This combination of tools and configurations allows me to maintain a productive and efficient
