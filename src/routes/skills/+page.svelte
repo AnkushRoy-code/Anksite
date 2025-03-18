@@ -57,18 +57,24 @@
 			<h1>Programming Skills</h1>
 			<ul>
 				<li>
-					<strong>C++:</strong> Advanced knowledge, including graphics programming with OpenGL and SDL2,
-					and learning ray tracing.
+                    <strong>C++:</strong> Good knowledge of C/C++, including
+                    graphics programming with various Graphics APIs and C/C++
+                    libraries, and learning ray tracing.
 				</li>
 				<li>
-					<strong>Python:</strong> Basic understanding; started learning with Python but now primarily
-					focus on C++.
+                    <strong>Rust:</strong> Not the best Rustacean, just know
+                    how to have fun using it.
 				</li>
 				<li>
-					<strong>HTML & CSS:</strong> Proficient in creating web pages with a strong grasp of CSS for
-					styling.
+                    <strong>Python:</strong> Basic understanding; started
+                    learning with Python but now primarily focus on C++ and Rust.
 				</li>
-				<li><strong>JavaScript:</strong> Basic knowledge for enhancing web interactivity.</li>
+				<li>
+                    <strong>HTML & CSS:</strong> Good enought to make something good.
+				</li>
+                <li>
+                    <strong>And Many Others!</strong> Don't keep count! I learn a lot forget a lot.
+                </li>
 			</ul>
 		</div>
 	</section>
@@ -77,9 +83,9 @@
 			<h1>Mathematics Skills</h1>
 			<ul>
 				<li><strong>Algebra:</strong> Strong grasp of algebraic concepts and problem-solving.</li>
-				<li><strong>Calculus:</strong> Proficient in both differential and integral calculus.</li>
+				<li><strong>Calculus:</strong> Good in both differential and integral calculus.</li>
 				<li>
-					<strong>Geometry:</strong> In-depth understanding of geometric principles and their applications.
+					<strong>Geometry:</strong> In-depth understanding of geometric principles and their applications. My weak spot though.
 				</li>
 				<li>
 					<strong>Statistics & Probability:</strong> Basic knowledge, with interest in exploring further.
@@ -93,19 +99,17 @@
 			<ul>
 				<li>
 					<strong>i3wm:</strong> Window manager used with Arch Linux, along with Picom and autotiling
-					for efficient workflow.
+					for best looks.
 				</li>
 				<li><strong>Neovim:</strong> Primary text editor with extensive customizations.</li>
 				<li>
-					<strong>Konsole:</strong> Terminal emulator of choice, paired with Tmux for terminal multiplexing.
+					<strong>SuckLess Terminal:</strong> ST terminal used with TMUX for best productivity.
 				</li>
 				<li>
 					<strong>KMonad:</strong> Used for managing keyboard layers, and typing with the Colemak layout.
 				</li>
 				<li>
-					<strong>Git:</strong> Proficient in version control using Git, essential for collaborative
-					projects and managing code versions.
-				</li>
+					<strong>GIMP:</strong> I draw in my free time. Using GIMP or Krita. Not the best just a newbie. </li>
 			</ul>
 		</div>
 	</section>
@@ -114,7 +118,7 @@
 			<h1>Other Skills</h1>
 			<ul>
 				<li>
-					<strong>Languages:</strong> Fluent in Bengali, Hindi, English, Kokborok, and basic Spanish.
+					<strong>Languages:</strong> Fluent in Bengali, Hindi, English, and basics of Spanish and Kokborok.
 				</li>
 				<li>
 					<strong>Chess:</strong> Experienced player, with participation and wins in local tournaments.
@@ -137,6 +141,10 @@
 		padding-top: 1rem;
 	}
 
+    body {
+        background-color: var(--mocha-sapphire);
+    }
+
 	.skillshead {
 		position: relative;
 		width: 80%;
@@ -156,11 +164,12 @@
 	.section {
 		position: relative;
 		z-index: 0;
-		height: 50vh;
+		height: auto;
+        min-height: 50vh;
 		width: 100%;
 	}
 	.innersection {
-		position: absolute;
+		position: relative;
 		top: 20px;
 		left: 20px;
 		width: calc(100% - 40px);
@@ -191,5 +200,6 @@
 	.fourth {
 		background-color: var(--mocha-surface0);
 		color: var(--mocha-lavender);
+        margin-bottom: 2rem;
 	}
 </style>
